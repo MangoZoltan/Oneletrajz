@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    background-image: url('https://cdn.hipwallpaper.com/i/79/46/HCOGx2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+
+}
+#keret{
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+    background-color: white;
+}
+header, footer, .container{
+    width: calc(100%-20px);
+    padding: 20px;
+    border-top: px solid #333;
+    border-bottom: 1px solid #333;
+}
+h1{
+    text-align: center;
+    background-color: #333;
+    color: aliceblue;
+    padding: 10px;
+}
+header, footer{
+    background-color: cadetblue;
+    color: aliceblue;
+}
+header::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+header h3{
+    text-decoration: underline;
+}
+header ul{
+    /* width: 300px; */
+    width: calc((100% - 250px)/2);
+    padding: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+header li{
+    padding: 0px;
+}
+header ul#bal{
+    float: left;
+}
+header ul#jobb{
+    float: left;
+}
+header #imgBox{
+    float: left;
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    border: 4px solid #fff;
+    overflow: hidden;
+    background-image: url('data:image/jpeg;base64,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');
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    background-color: white;
+    color: #333;
+    border-top: px solid #333;
+    border-bottom: 1px solid #333;
+}
+.container h2{
+    border-bottom: 3px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.kulso{
+    padding-left: 20px;
+    list-style: none;
+}
+.kulso b{
+    display: inline-block;
+    margin-top: 5px;
+}
+.belso{
+    padding-left: 40px;
+    list-style: disc;
+}
